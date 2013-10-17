@@ -1,0 +1,7 @@
+%section.course
+  %header.clearfix
+    %h1 Ihre Klassen
+  %article.row
+    - @courses.each do |course|
+      .course.span2
+        =course.name
