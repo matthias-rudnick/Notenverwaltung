@@ -1,3 +1,6 @@
 Notenverwaltung::Application.routes.draw do
- get 'home', to: 'courses#index'
+
+  get 'ui(/:action)', controller: 'ui'
+
+  get 'home', to: 'courses#index'
 end
